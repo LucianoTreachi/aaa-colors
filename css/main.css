@@ -1,0 +1,428 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --body-color: #f4f4f4;
+  --logo-color: #26538d;
+  --h1-color: #1d1e1f;
+  --h2-color: #28292b;
+  --h3-color: #313235;
+  --text-color: #181818;
+}
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+button:focus,
+a:focus,
+summary:focus {
+  outline-offset: 0.3rem;
+}
+
+p {
+  text-wrap: pretty;
+  line-height: 1.4;
+  color: var(--text-color);
+  opacity: 0.85;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+h1 {
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+b {
+  color: #3a3b3b;
+}
+
+small {
+  letter-spacing: 0.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+/* Common clases */
+
+.section-title {
+  font-size: 1.875rem;
+  text-align: center;
+  color: var(--h2-color);
+  width: 80%;
+  margin: 0 auto 1.2rem;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+.nav {
+  box-shadow: 0 4px 16px -3px rgba(224, 224, 224, 0.1);
+  background-color: #ffffff;
+  padding: 1.25rem;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--logo-color);
+}
+
+.github-link svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #10131f;
+  filter: drop-shadow(0 5px 10px rgba(82, 83, 83, 0.2))
+}
+
+/* Main */
+
+.main-title {
+  font-size: 4rem;
+  color: var(--h1-color);
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-align: center;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+/* Tools */
+
+.tools-container {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.tool-link {
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: grid;
+  background-color: #e7eaee;
+  transition: box-shadow 0.3s ease;
+}
+
+.tool-link.one {
+  background-color: #cbedf9;
+  color: #09435e;
+}
+
+.tool-link.two {
+  background-color: #d3f7e8;
+  color: #054233;
+}
+
+.tool-link.three {
+  background-color: #f8defd;
+  color: #40044d;
+}
+
+.tool-link.four {
+  background-color: #fadec0;
+  color: #502c05;
+}
+
+.tool-icon {
+  display: grid;
+  place-self: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.tool-link:hover {
+  opacity: 1;
+  box-shadow: 0 5px 10px rgba(150, 150, 150, 0.1);
+}
+
+.tool-link:hover .tool-icon {
+  transform: scale(1.1);
+}
+
+.tool-link.one>span:nth-child(3),
+.tool-link.two>span:nth-child(3),
+.tool-link.three>span:nth-child(3),
+.tool-link.four>span:nth-child(3) {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* FAQs */
+
+.faqs {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.details {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(200, 200, 200, 0.1);
+}
+
+.summary {
+  cursor: pointer;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.summary h3 {
+  font-size: 1.125rem;
+  color: var(--h3-color);
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+}
+
+.summary-icon {
+  min-width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--h3-color);
+  opacity: 0.85;
+  transition: transform .3s ease;
+}
+
+.details[open] .summary-icon {
+  transform: rotate(180deg);
+}
+
+.answer {
+  padding: 0 1.25rem 1.25rem;
+  width: 90%;
+}
+
+.answer-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Footer */
+
+.footer {
+  box-shadow: 0 4px 16px -3px rgba(224, 224, 224, 0.1);
+  background-color: #ffffff;
+  padding: 4rem 1.25rem;
+  position: relative;
+}
+
+.back-to-top-button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back-to-top-button svg {
+  width: 4rem;
+  height: 4rem;
+  fill: #10131f;
+  filter: drop-shadow(0 5px 10px rgba(82, 83, 83, 0.3))
+}
+
+.footer p {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.socials {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.socials a {
+  font-size: 1.625rem;
+  opacity: .75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .4s;
+}
+
+.socials a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.socials svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: #10131f;
+}
+
+@media (max-width: 576px) {
+
+  button:hover,
+  a:hover {
+    opacity: 1;
+  }
+
+  .tool-link span {
+    display: block;
+    width: 70%;
+    margin-inline: auto;
+    text-wrap: balance;
+  }
+
+  .tool-link:hover {
+    box-shadow: none;
+  }
+
+  .tool-link:hover .tool-icon {
+    transform: scale(1);
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    width: 100%;
+    margin: 0 0 1.2rem;
+  }
+
+  .nav {
+    padding: 1.25rem 1rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .back-to-top-button {
+    top: -1.8rem;
+  }
+
+  .back-to-top-button svg {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .socials a:hover {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 335px) {
+  html {
+    font-size: 90%;
+  }
+}

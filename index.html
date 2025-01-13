@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA Colors - Generador de Colores Accesibles</title>
+  <meta name="description"
+    content="Genera combinaciones de colores accesibles con el contraste ideal siguiendo las pautas WCAG. Mejora la legibilidad y crea diseños inclusivos.">
+  <link rel="canonical" href="https://aaacolors.vercel.app/">
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple/apple-touch-icon.png">
+  <!-- Schema WebSite -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AAA Colors - Generador de Colores Accesibles",
+      "url": "https://aaacolors.vercel.app/",
+      "description": "Genera combinaciones de colores accesibles con el contraste ideal siguiendo las pautas WCAG. Mejora la legibilidad y crea diseños inclusivos.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Luciano Treachi"
+      }
+    }
+  </script>
+  <!-- Fonts -->
+  <link rel="preload" as="font" href="/assets/fonts/Poppins-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="preload" href="/css/main.css" as="style">
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- JavaScript -->
+  <script src="/js/main.js" defer></script>
+  <!-- OG -->
+  <meta property="og:url" content="https://aaacolors.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AAA Colors - Generador de Colores Accesibles">
+  <meta property="og:description"
+    content="Genera combinaciones de colores accesibles con el contraste ideal siguiendo las pautas WCAG. Mejora la legibilidad y crea diseños inclusivos.">
+  <meta property="og:image" content="https://i.postimg.cc/SNK6qrVV/og-banner.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aaacolors.vercel.app/">
+  <meta name="twitter:title" content="AAA Colors - Generador de Colores Accesibles">
+  <meta name="twitter:description"
+    content="Genera combinaciones de colores accesibles con el contraste ideal siguiendo las pautas WCAG. Mejora la legibilidad y crea diseños inclusivos.">
+  <meta name="twitter:image" content="https://i.postimg.cc/SNK6qrVV/og-banner.jpg">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="logo-link">
+        <img src="/assets/svg/logo.svg" alt="Logo de AAA Colors, generador de colores accesibles" width="40"
+          height="40">
+        AAA Colors
+      </a>
+      <a href="https://github.com/LucianoTreachi/aaa-colors" aria-label="Ver el repositorio del proyecto en GitHub"
+        class="github-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="github-icon">
+          <path
+            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="section" aria-label="Sección título principal" style="padding: 4rem 1.25rem 0;">
+      <div class="container">
+        <h1 class="main-title">
+          Genera Colores con Contraste Accesible
+        </h1>
+        <h2 class="subtitle">
+          Crea combinaciones de colores accesibles y garantiza un diseño inclusivo para todos.
+        </h2>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sección herramientas" style="padding: 4rem 1.25rem 0;">
+      <div class="container">
+        <h2 class="section-title">¿Qué herramienta te gustaría utilizar?</h2>
+
+        <div class="tools-container">
+          <a href="/generador-un-solo-color" class="tool-link one">
+            <img src="/assets/svg/single-color-icon.svg" alt="" aria-hidden="true" class="tool-icon" width="70"
+              height="70">
+            <span>Generador de un solo color</span>
+            <span>Encuentra un color que contraste con un fondo específico.</span>
+          </a>
+          <a href="/generador-dos-colores" class="tool-link two">
+            <img src="/assets/svg/dual-color-icon.svg" alt="" aria-hidden="true" class="tool-icon" width="80"
+              height="80">
+            <span>Generador de dos colores</span>
+            <span>Crea combinaciones aleatorias de color para fondo y texto.</span>
+          </a>
+          <a href="/generador-regla-60-30-10" class="tool-link three">
+            <img src="/assets/svg/rule-60-30-10-icon.svg" alt="" aria-hidden="true" class="tool-icon" width="70"
+              height="70">
+            <span>Generador de la regla 60-30-10</span>
+            <span>Crea paletas equilibradas y balanceadas.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sección preguntas frecuentes" style="padding: 4rem 1.25rem 4rem;">
+      <div class="container">
+        <h2 class="section-title">Preguntas <br> frecuentes</h2>
+
+        <div class="faqs">
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Qué puedo hacer en este sitio web?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer answer-grid">
+              <span>En este sitio web puedes:</span>
+              <span><b>1.</b> Generar un color que contraste perfectamente con un fondo específico.</span>
+              <span><b>2.</b> Generar combinaciones de colores para fondo y texto.</span>
+              <span><b>3.</b> Generar colores balanceados con la regla 60-30-10.</span>
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Cómo utilizo los generadores de colores?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              ¡Es muy fácil! Solo haz clic en los recuadros de arriba para acceder a cada generador.
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Por qué debería utilizar un generador de color accesible?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              Para garantizar que el contenido sea fácil de leer y accesible para todos. Además ¡es una fuente de
+              inspiración para crear combinaciones únicas y funcionales!
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Para qué sirve el generador de un solo color?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              Te ayuda a encontrar un color ideal que contraste con un fondo específico. Es perfecto cuando ya
+              tienes definido el color del fondo.
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Para qué sirve el generador de dos colores?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              Te permite crear combinaciones aleatorias de colores para fondo y texto. Es perfecto para explorar nuevas
+              combinaciones de colores y encontrar la más adecuada para tus diseños.
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Para qué sirve el generador de la regla 60-30-10?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              Te permite crear paletas equilibradas y balanceadas mediante 3 colores: primario (60%), secundario (30%) y
+              acento (10%). Es perfecto para lograr un diseño visualmente equilibrado.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <button class="back-to-top-button" aria-label="Volver arriba">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12H16L12 8L8 12H11V16H13V12Z">
+        </path>
+      </svg>
+    </button>
+
+    <div class="container">
+      <p>
+        <strong>AAA Colors</strong>
+        <br><br>
+        Sitio web
+        <br>
+        desarrollado por
+        <br>
+        Luciano Treachi
+        <br><br>
+        2025
+        <br><br>
+        <b>
+          Versión
+          <br>
+          <small>
+            1.0.0
+          </small>
+        </b>
+      </p>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/luciano-treachi/"
+          aria-label="Visitar perfil de LinkedIn de Luciano Treachi" title="se abre en una nueva pestaña"
+          target="_blank" rel="noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://github.com/LucianoTreachi" aria-label="Visitar perfil de Github de Luciano Treachi"
+          title="se abre en una nueva pestaña" target="_blank" rel="noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://lucianotreachi.website/" aria-label="Visitar el sitio web de Luciano Treachi"
+          title="se abre en una nueva pestaña" target="_blank" rel="noreferrer">
+          <svg class="website-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            aria-hidden="true">
+            <path
+              d="M2.04932 12.9999H7.52725C7.70624 16.2688 8.7574 19.3053 10.452 21.8809C5.98761 21.1871 2.5001 17.5402 2.04932 12.9999ZM2.04932 10.9999C2.5001 6.45968 5.98761 2.81276 10.452 2.11902C8.7574 4.69456 7.70624 7.73111 7.52725 10.9999H2.04932ZM21.9506 10.9999H16.4726C16.2936 7.73111 15.2425 4.69456 13.5479 2.11902C18.0123 2.81276 21.4998 6.45968 21.9506 10.9999ZM21.9506 12.9999C21.4998 17.5402 18.0123 21.1871 13.5479 21.8809C15.2425 19.3053 16.2936 16.2688 16.4726 12.9999H21.9506ZM9.53068 12.9999H14.4692C14.2976 15.7828 13.4146 18.3732 11.9999 20.5915C10.5852 18.3732 9.70229 15.7828 9.53068 12.9999ZM9.53068 10.9999C9.70229 8.21709 10.5852 5.62672 11.9999 3.40841C13.4146 5.62672 14.2976 8.21709 14.4692 10.9999H9.53068Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

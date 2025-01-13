@@ -1,0 +1,232 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --body-color: #f4f4f4;
+  --text-color: #181818;
+  --h1-color: #1d1e1f;
+  --logo-color: #26538d;
+}
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+h1 {
+  text-wrap: balance;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation */
+
+.nav {
+  box-shadow: 0 4px 16px -3px rgba(224, 224, 224, 0.1);
+  background-color: #ffffff;
+  padding: 1.25rem;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--logo-color);
+}
+
+.github-link svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #10131f;
+  filter: drop-shadow(0 5px 10px rgba(82, 83, 83, 0.2))
+}
+
+/* Main */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+h1 {
+  font-size: 1.875rem;
+  text-align: center;
+  color: var(--h1-color);
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  padding: 1rem;
+  transition: opacity 0.4s;
+}
+
+.back-link-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  transition: transform 0.2s;
+}
+
+.back-link:hover .back-link-icon {
+  transform: translateX(-0.2rem);
+}
+
+/* Footer */
+
+.footer {
+  background-color: #ffffff;
+  padding: 4rem 1.25rem;
+  position: relative;
+}
+
+.back-to-top-button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back-to-top-button svg {
+  width: 4rem;
+  height: 4rem;
+  fill: #10131f;
+  filter: drop-shadow(0 5px 10px rgba(82, 83, 83, 0.3))
+}
+
+.footer p {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.socials {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.socials a {
+  font-size: 1.625rem;
+  opacity: .75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .4s;
+}
+
+.socials a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.socials svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: #10131f;
+}
+
+@media (max-width: 576px) {
+  .nav {
+    padding: 1.25rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .back-link {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .back-to-top-button {
+    top: -1.8rem;
+  }
+
+  .back-to-top-button svg {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .socials a:hover {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 335px) {
+  html {
+    font-size: 90%;
+  }
+}

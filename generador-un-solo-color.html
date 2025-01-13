@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de un solo color - AAA Colors</title>
+  <meta name="description"
+    content="Encuentra un color ideal que contraste con un fondo específico, cumpliendo con las pautas de accesibilidad WCAG.">
+  <link rel="canonical" href="https://aaacolors.vercel.app/generador-un-solo-color">
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple/apple-touch-icon.png">
+  <!-- Schema WebSite -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Generador de un solo color - AAA Colors",
+      "url": "https://aaacolors.vercel.app/generador-un-solo-color",
+      "description": "Encuentra un color ideal que contraste con un fondo específico, cumpliendo con las pautas de accesibilidad WCAG.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Luciano Treachi"
+      }
+    }
+  </script>
+  <!-- Fonts -->
+  <link rel="preload" as="font" href="/assets/fonts/Poppins-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="preload" href="/css/single-color.css" as="style">
+  <link rel="stylesheet" href="/css/single-color.css">
+  <!-- JavaScript -->
+  <script src="/js/single-color.js" defer></script>
+  <!-- OG -->
+  <meta property="og:url" content="https://aaacolors.vercel.app/generador-un-solo-color">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Generador de un solo color - AAA Colors">
+  <meta property="og:description"
+    content="Encuentra un color ideal que contraste con un fondo específico, cumpliendo con las pautas de accesibilidad WCAG.">
+  <meta property="og:image" content="https://i.postimg.cc/SNK6qrVV/og-banner.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aaacolors.vercel.app/generador-un-solo-color">
+  <meta name="twitter:title" content="Generador de un solo color - AAA Colors">
+  <meta name="twitter:description"
+    content="Encuentra un color ideal que contraste con un fondo específico, cumpliendo con las pautas de accesibilidad WCAG.">
+  <meta name="twitter:image" content="https://i.postimg.cc/SNK6qrVV/og-banner.jpg">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="logo-link">
+        <img src="/assets/svg/logo.svg" alt="Logo de AAA Colors, generador de colores accesibles" width="40"
+          height="40">
+        AAA Colors
+      </a>
+      <a href="https://github.com/LucianoTreachi/aaa-colors" aria-label="Ver el repositorio del proyecto en GitHub"
+        class="github-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section class="section" aria-label="Sección título principal" style="padding: 3rem 1.25rem 0;">
+      <div class="container">
+        <a href="javascript:window.history.back()" class="back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z">
+            </path>
+          </svg>
+          <span>Volver</span>
+        </a>
+        <h1 class="main-title">
+          Generador de un solo color
+        </h1>
+        <h2 class="subtitle">
+          Encuentra un color que contraste con un fondo específico.
+        </h2>
+      </div>
+    </section>
+
+    <section class="section" id="color-selection" aria-label="Sección selección color" style="padding: 3rem 1.25rem 0;">
+      <div class="container">
+        <h2 class="section-title">1. Elige un color para el fondo</h2>
+
+        <div class="input-group">
+          <label for="color-input" class="label">Color</label>
+          <input type="color" id="color-input" class="color-input" value="#E0E0E0">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sección niveles de accesibilidad" style="padding: 3rem 1.25rem 0;">
+      <div class="container">
+        <h2 class="section-title">2. Selecciona un nivel de accesibilidad</h2>
+
+        <div class="selection-buttons">
+          <div class="selection-button" tabindex="0" role="radio" aria-checked="true" data-value="AA">
+            <b style="color: #0041b1; font-size: 1.1rem;">A y AA</b> <br> (desde 4.5)
+          </div>
+          <div class="selection-button" tabindex="0" role="radio" aria-checked="false" data-value="AAA">
+            <b style="color: #0041b1; font-size: 1.1rem;">AAA</b> <br> (desde 7)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sección generar colores" style="padding: 3rem 1.25rem 0;">
+      <div class="container">
+        <h2 class="section-title">3. Genera colores de contraste accesible para el fondo seleccionado</h2>
+
+        <div class="buttons-container">
+          <button class="generate-button">Generar color de contraste</button>
+          <button class="reset-button">Restablecer todos los valores</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="example-section" aria-label="Sección ejemplos de uso" style="padding: 3rem 1.25rem 0;">
+      <div class="container">
+        <h2 class="section-title">4. Observa cómo se aplican los cambios al diseño</h2>
+
+        <div class="example-card">
+          <img class="example-avatar"
+            src="https://res.cloudinary.com/dwqk2mkgh/image/upload/f_auto,q_auto/v1705925471/Portfolio-Personal/luciano-treachi_f2b6vw.png"
+            alt="Avatar de Luciano Treachi" width="200" height="205">
+          <h2 class="example-title">Luciano Treachi</h2>
+          <p class="example-paragraph">Desarrollador Frontend enfocado en optimización y accesibilidad web.</p>
+          <button class="example-button">Generar color</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sección información de colores obtenidos" style="padding: 3rem 1.25rem 0;">
+      <div class="container">
+        <h2 class="section-title">5. Información de colores</h2>
+
+        <div class="contrast-info">
+          <h3>Relación de Contraste</h3>
+          <b class="contrast-info-number">12.73</b>
+        </div>
+
+        <hr>
+
+        <div class="compliance-wcag-info">
+          <h3>Cumplimiento WCAG</h3>
+
+          <div class="levels">
+            <div class="level">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="aa-level-icon">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z">
+                </path>
+              </svg>
+              <b>AA</b>
+            </div>
+            <div class="level">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="aaa-level-icon">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z">
+                </path>
+              </svg>
+              <b>AAA</b>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="colors-info">
+          <h3>Códigos de color</h3>
+
+          <div class="cards">
+            <div class="card">
+              <h4>Color de fondo</h4>
+              <div class="sample-color sample-color-1"></div>
+              <p><b>HEX:</b> <span class="selected-hex-code">#E0E0E0</span></p>
+              <p><b>RGB:</b> <span class="random-rgb-code">224, 224, 224</span></p>
+              <p><b>HSL:</b> <span class="random-hsl-code">0, 0%, 88%</span></p>
+            </div>
+
+            <div class="card">
+              <h4>Color de contraste</h4>
+              <div class="sample-color sample-color-2"></div>
+              <p><b>HEX:</b> <span class="random-hex-code">#26182C</span></p>
+              <p><b>RGB:</b> <span class="selected-rgb-code">38, 24, 24</span></p>
+              <p><b>HSL:</b> <span class="selected-hsl-code">282, 29%, 13%</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" aria-label="Sección preguntas frecuentes" style="padding: 3rem 1.25rem 4rem;">
+      <div class="container">
+        <h2 class="section-title">6. Elimina cualquier duda aquí</h2>
+
+        <div class="faqs">
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Para qué sirve el generador de un solo color?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              Te ayuda a encontrar un color ideal que contraste con un fondo específico. Es perfecto cuando ya
+              tienes definido el color del fondo.
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Cómo uso este generador?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer answer-grid">
+              <span><b>1.</b> Elige un color para el fondo.</span>
+              <span><b>2.</b> Selecciona un nivel de Accesibilidad.</span>
+              <span><b>3.</b> Haz clic en cualquier botón 'Generar'.</span>
+              <span><b>4.</b> Obtén colores de contraste accesibles para el color de fondo seleccionado.</span>
+              <span><b>5.</b> Restablece todos los valores con el botón 'Restablecer'.</span>
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Qué significa A, AA y AAA?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer answer-grid">
+              <span>
+                Son tres niveles establecidos por las Pautas de Accesibilidad para el Contenido Web (WCAG) que indican
+                el grado de accesibilidad de un sitio web.
+              </span>
+              <span>
+                <b>• El nivel A</b> es el mínimo.
+              </span>
+              <span>
+                <b>• El nivel AA</b> es el estándar recomendado.
+              </span>
+              <span>
+                <b>• El nivel AAA</b> es el máximo posible.
+              </span>
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Qué es la relación de contraste?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer">
+              Es una medida que muestra qué tan diferentes son dos colores, como el texto y el fondo, para asegurar que
+              sean fáciles de leer.
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Qué representan los valores 4.5 y 7?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer answer-grid">
+              <span>
+                Son los valores mínimos de contraste que aseguran una buena legibilidad en la web:
+              </span>
+              <span>
+                <b>• 4.5</b> significa que el texto debe ser 4.5 veces más oscuro o claro que el fondo para cumplir
+                con
+                el nivel AA.
+              </span>
+              <span>
+                <b>• 7</b> significa que el texto debe ser 7 veces más oscuro o claro que el fondo para cumplir con el
+                nivel AAA.
+              </span>
+            </p>
+          </details>
+
+          <details class="details">
+            <summary class="summary" tabindex="0">
+              <h3>
+                ¿Puedo utilizar este generador solo con el teclado?
+              </h3>
+              <svg class="summary-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z">
+                </path>
+              </svg>
+            </summary>
+            <p class="answer answer-grid">
+              <span>¡Sí, absolutamente! Este generador es totalmente accesible mediante el teclado. Aquí te explico cómo
+                hacerlo:</span>
+              <span><b>• Desplázate</b> por toda la página con las flechas del teclado.</span>
+              <span><b>• Navega</b> entre los controles interactivos utilizando la tecla Tab
+                para avanzar, y Shift + Tab para retroceder.</span>
+              <span><b>• Activa</b> los controles interactivos con Enter o Espacio.</span>
+              <span><b>• Selecciona</b> un color para el fondo usando las flechas del teclado.</span>
+              <span><b>• Sal</b> de controles o ventanas emergentes con la tecla Escape.</span>
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <dialog class="dialog-modal">
+      <span class="sad-emoji" aria-hidden="true">😔</span>
+      <P class="warning-message">
+        No se puede alcanzar el nivel AAA con el color seleccionado. Intenta con el nivel A / AA o elige otro color.
+      </P>
+      <button class="close-dialog-button">Cerrar</button>
+    </dialog>
+
+  </main>
+
+  <footer class="footer">
+    <button class="back-to-top-button" aria-label="Volver arriba">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12H16L12 8L8 12H11V16H13V12Z">
+        </path>
+      </svg>
+    </button>
+
+    <div class="container">
+      <p>
+        <strong>AAA Colors</strong>
+        Sitio web
+        <br>
+        desarrollado por
+        <br>
+        Luciano Treachi
+        <br><br>
+        2025
+        <br><br>
+        <b>
+          Versión
+          <br>
+          <small>
+            1.0.0
+          </small>
+        </b>
+      </p>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/luciano-treachi/"
+          aria-label="Visitar perfil de LinkedIn de Luciano Treachi" title="se abre en una nueva pestaña"
+          target="_blank" rel="noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://github.com/LucianoTreachi" aria-label="Visitar perfil de Github de Luciano Treachi"
+          title="se abre en una nueva pestaña" target="_blank" rel="noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://lucianotreachi.website/" aria-label="Visitar el sitio web de Luciano Treachi"
+          title="se abre en una nueva pestaña" target="_blank" rel="noreferrer">
+          <svg class="website-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            aria-hidden="true">
+            <path
+              d="M2.04932 12.9999H7.52725C7.70624 16.2688 8.7574 19.3053 10.452 21.8809C5.98761 21.1871 2.5001 17.5402 2.04932 12.9999ZM2.04932 10.9999C2.5001 6.45968 5.98761 2.81276 10.452 2.11902C8.7574 4.69456 7.70624 7.73111 7.52725 10.9999H2.04932ZM21.9506 10.9999H16.4726C16.2936 7.73111 15.2425 4.69456 13.5479 2.11902C18.0123 2.81276 21.4998 6.45968 21.9506 10.9999ZM21.9506 12.9999C21.4998 17.5402 18.0123 21.1871 13.5479 21.8809C15.2425 19.3053 16.2936 16.2688 16.4726 12.9999H21.9506ZM9.53068 12.9999H14.4692C14.2976 15.7828 13.4146 18.3732 11.9999 20.5915C10.5852 18.3732 9.70229 15.7828 9.53068 12.9999ZM9.53068 10.9999C9.70229 8.21709 10.5852 5.62672 11.9999 3.40841C13.4146 5.62672 14.2976 8.21709 14.4692 10.9999H9.53068Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
