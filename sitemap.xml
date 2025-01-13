@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://aaacolors.vercel.app/</loc>
+	<lastmod>2025-01-13T18:26:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aaacolors.vercel.app/generador-un-solo-color</loc>
+	<lastmod>2025-01-13T18:26:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aaacolors.vercel.app/generador-dos-colores</loc>
+	<lastmod>2025-01-13T18:26:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aaacolors.vercel.app/generador-regla-60-30-10</loc>
+	<lastmod>2025-01-13T18:26:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
