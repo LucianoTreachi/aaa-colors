@@ -148,7 +148,7 @@ function findContrastColor(selectedColor, targetRatio) {
   return bestContrastColor;
 }
 
-//*** FUNCIONES DE INTERFAZ ***//
+//*** FUNCIONES DE LA INTERFAZ ***//
 
 // Función para generar y actualizar colores
 function generateColors() {
@@ -319,54 +319,3 @@ closeDialogButton.addEventListener("click", () => {
 
 // Botón para navegar hacia arriba
 backToTopButton.addEventListener("click", backToTop);
-
-/* 
-
-DOCUMENTACIÓN
-**************
-
-01. generateColors(): Función para generar y actualizar colores
-
-  * En la variable 'selectedColor' guarda el color seleccionado por el usuario.
-  * En la variable 'level' guarda el nivel de accesibilidad seleccionado por el usuario: A/AA o AAA
-  * En la variable 'contrastRatios' define un objeto con los valores de relación de contraste según el nivel de accesibilidad.
-  * 
-  * En la variable 'contrastColor' guarda la función 'findContrastColor' y le pasa 2 argumentos: 'selectedColor' y 'contrastLevel.normal'.
-  * En la variable 'contrastRatio' guarda la función 'getContrastRatio' y le pasa 2 argumentos: 'selectedColor' y 'contrastColor.
-  * Realiza una validación para el nivel AAA. En caso de no encontrar una combinación de colores AAA muestra un modal.
-  * Muestra un mensaje informativo sobre la relación de contraste.
-  * Invoca a la función 'updateExampleColors' y le pasa 2 argumentos: 'selectedColor' y 'contrastColor'.
-  * Invoca a la función 'updateColorsInformation' y le pasa 2 argumentos: 'selectedColor' y 'contrastColor'.
-
-02. updateExampleColors(): función para actualizar los colores en el ejemplo
-
-  * Tiene 2 parámetros: 'selectedColor' y 'contrastColor'.
-  * Actualiza el color de fondo del ejemplo.
-  * Actualiza el color del título del ejemplo.
-  * Actualiza el color del párrafo del ejemplo.
-  * Actualiza el color de fondo del botón del ejemplo.
-  * Actualiza el color de texto del botón del ejemplo.
-
-03. updateColorsInformation(): función para actualizar la información de colores 
-
-  * Actualiza el color de fondo del color seleccionado.
-  * Actualiza el color de fondo del color de contraste.
-
-04. reset(): función para restablecer todos los valores
-
-  * Restablece el color seleccionado a negro.
-  * Restablece al nivel de accesibilidad a: A / AA.
-  * Restablece la información de relación de contraste.
-  * Restablece los colores del ejemplo.
-  * Restablece la información de colores.
-  
-05. findContrastColor(): función para encontrar un color de contraste adecuado
-
-  * Recibe 2 parámetros: 'selectedColor' y 'targetRatio'.
-  *
-  * 
-  * 
-  * 
-  * 
-
-*/
