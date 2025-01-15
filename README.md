@@ -1,8 +1,8 @@
-# AAA COLORS: Generador de Colores Accesibles
+# AAA Colors: Generador de Colores Accesibles
 
-**AAA COLORS** es un sitio web que ayuda a generar combinaciones de colores que siguen las recomendaciones de las Pautas de Accesibilidad para el Contenido Web (WCAG) con el fin de mejorar la legibilidad y crear diseños inclusivos.
+**AAA Colors** es un sitio web que ayuda a generar combinaciones de colores que siguen las recomendaciones de las Pautas de Accesibilidad para el Contenido Web (WCAG) con el fin de mejorar la legibilidad y crear diseños inclusivos.
 
-Posee 3 herramientas:
+Incluye 3 herramientas:
 
 - **Generador de un solo color**: Te permite encontrar un color que contraste con un fondo específico.
 
@@ -14,11 +14,13 @@ Todos los generadores permiten seleccionar el nivel de accesibilidad A/AA (desde
 
 ## Utilidad
 
-**AAA COLORS** es útil para:
+**AAA Colors** es útil para:
 
 - Crear combinaciones de colores funcionales y accesibles de manera automática.
 
-- Garantizar que el contenido sea fácil de leer.
+- Cumplir siempre con las pautas de accesibilidad (WCAG).
+
+- Mejorar la legibilidad del contenido.
 
 - Obtener inspiración.
 
