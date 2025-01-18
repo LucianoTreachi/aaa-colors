@@ -211,23 +211,18 @@ small {
 }
 
 .tool-link.one {
-  background-color: #cbedf9;
+  background-color: #bae2f9;
   color: #09435e;
 }
 
 .tool-link.two {
-  background-color: #d3f7e8;
+  background-color: #b3efd4;
   color: #054233;
 }
 
 .tool-link.three {
-  background-color: #f8defd;
+  background-color: #f4baf9;
   color: #40044d;
-}
-
-.tool-link.four {
-  background-color: #fadec0;
-  color: #502c05;
 }
 
 .tool-icon {
