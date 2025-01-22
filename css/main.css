@@ -207,21 +207,24 @@ small {
   font-weight: bold;
   display: grid;
   background-color: #e7eaee;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .tool-link.one {
   background-color: #bae2f9;
+  border: 2px solid #bae2f9;
   color: #09435e;
 }
 
 .tool-link.two {
   background-color: #b3efd4;
+  border: 2px solid #b3efd4;
   color: #054233;
 }
 
 .tool-link.three {
   background-color: #f4baf9;
+  border: 2px solid #f4baf9;
   color: #40044d;
 }
 
@@ -234,6 +237,7 @@ small {
 
 .tool-link:hover {
   opacity: 1;
+  border: 2px solid #09435e;
   box-shadow: 0 5px 10px rgba(150, 150, 150, 0.1);
 }
 
@@ -376,6 +380,7 @@ small {
   }
 
   .tool-link:hover {
+    border-color: transparent;
     box-shadow: none;
   }
 
