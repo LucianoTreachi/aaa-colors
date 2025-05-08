@@ -524,7 +524,8 @@ small {
   fill: #10131f;
 }
 
-@media (max-width: 576px) {
+/* 576px */
+@media (max-width: 36em) {
 
   button:hover,
   a:hover {
@@ -579,7 +580,8 @@ small {
   }
 }
 
-@media (max-width: 335px) {
+/* 336px */
+@media (max-width: 21em) {
   html {
     font-size: 90%;
   }
