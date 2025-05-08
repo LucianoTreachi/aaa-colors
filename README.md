@@ -24,7 +24,8 @@ Todos los generadores permiten seleccionar el nivel de accesibilidad A/AA (desde
 
 - Obtener inspiración.
 
-La accesibilidad en los colores es fundamental para garantizar que las personas con diferentes discapacidades visuales puedan consumir contenido sin barreras.
+> [!NOTE]
+> La accesibilidad en los colores es fundamental para garantizar que las personas con diferentes discapacidades visuales puedan consumir contenido sin barreras.
 
 ## Vista previa
 
