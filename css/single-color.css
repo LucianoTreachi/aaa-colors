@@ -446,7 +446,7 @@ small {
   position: fixed;
   inset: 0;
   margin: auto;
-  width: 500px;
+  width: 31.25rem;
   animation: fadeIn .2s linear;
 }
 
